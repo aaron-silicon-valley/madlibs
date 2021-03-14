@@ -29,10 +29,3 @@ plural_noun = 'saving')
 # holiday, noun1, place, person, adj1, body_part, verb1, adj2, noun2, food, plural_noun
 
 print(madlibs)
-
-# Git init
-# Git add .
-# Git status
-# Git commit -m “comment”
-# Git remote add origin url
-# Git push -u origin master
