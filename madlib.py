@@ -1,31 +1,42 @@
-# holiday = 'holiday'
-# noun1 = 'wedding'
-# place = 'france'
-# person = 'hulk'
-# adj1 = 'big'
-# body_part = 'arm'
-# verb1 = 'run'
-# adj2 = 'hard'
-# noun2 = 'investment'
-# food = 'pizza'
-# plural_noun = 'saving'
+
+def words():
+    holidayR = str(input('Holiday: '))
+    noun1R = str(input('noun: '))
+    placeR = str(input('A place please: ')),
+    personR = str(input('Person: ')),
+    adj1R = str(input('Adjective: ')),
+    body_partR = str(input('body part: ')),
+    verb1R = str(input('verb: ')),
+    adj2R = str(input('Adjective again: ')),
+    noun2R = str(input('noun: ')),
+    foodR = str(input('food: ')),
+    plural_nounR = str(input('plural noun!: '))
+    return holidayR, noun1R , placeR, personR, adj1R, body_partR, verb1R, adj2R, noun2R, foodR, plural_nounR
+
+def main(holidayR, noun1R , placeR, personR, adj1R, body_partR, verb1R, adj2R, noun2R, foodR, plural_nounR):
+    madlibs = "I can't believe it's already {holiday}! \n" \
+              "I can't wait to put on my {noun1} and visit every {place} in my neighborhood.\n" \
+              "This year, I am going to dress up as {person} with {adj1} {body_part}.\n" \
+              "Before I {verb1}, I make sure to grab my {adj2} {noun2} to hold all of my {food}.\n" \
+              "Finally, all of my {plural_noun} are ready to go!".format(
+    holiday= holidayR,
+    noun1 = noun1R ,
+    place = placeR,
+    person = personR,
+    adj1 = adj1R,
+    body_part = body_partR,
+    verb1 = verb1R,
+    adj2 = adj2R,
+    noun2 = noun2R,
+    food = foodR,
+    plural_noun = plural_nounR)
+    print(madlibs)
 
 
-madlibs = "I can't believe it's already {holiday}! \n" \
-          "I can't wait to put on my {noun1} and visit every {place} in my neighborhood.\n" \
-          "This year, I am going to dress up as {person} with {adj1} {body_part}.\n" \
-          "Before I {verb1}, I make sure to grab my {adj2} {noun2} to hold all of my {food}.\n" \
-          "Finally, all of my {plural_noun} are ready to go!".format(holiday = 'holiday',
-noun1 = input('can I get a noun please!: '),
-place = input('A place please: '),
-person = input('Person: '),
-adj1 = input('Adjective: '),
-body_part = input('body part: '),
-verb1 = input('verb: '),
-adj2 = input('Adjective again: '),
-noun2 = input('noun: '),
-food = input('food: '),
-plural_noun = input('plural noun!: '))
-# holiday, noun1, place, person, adj1, body_part, verb1, adj2, noun2, food, plural_noun
+if __name__ == '__main__':
+    holidayR, noun1R , placeR, personR, adj1R, body_partR, verb1R, adj2R, noun2R, foodR, plural_nounR = words()
+    main(holidayR, noun1R , placeR, personR, adj1R, body_partR, verb1R, adj2R, noun2R, foodR, plural_nounR)
 
-print(madlibs)
+
+
+
